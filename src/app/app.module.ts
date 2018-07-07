@@ -5,6 +5,8 @@ import {AppComponent} from './app.component';
 import {RouterModule, Routes} from '@angular/router';
 import {LayoutComponent} from './shared/layout/layout.component';
 import {PageNotFoundComponent} from './shared/page-not-found/page-not-found.component';
+import {HeaderComponent} from './shared/header/header.component';
+import {FooterComponent} from './shared/footer/footer.component';
 
 const routes: Routes = [
   {path: '', component: LayoutComponent},
@@ -15,7 +17,9 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     LayoutComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
