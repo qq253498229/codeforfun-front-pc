@@ -1,0 +1,14 @@
+version: "3"
+services:
+  front:
+    build: .
+    image: registry.cn-qingdao.aliyuncs.com/wangdali/codeforfun-pc
+    container_name: front
+    environment:
+      TZ: Asia/Shanghai
+    networks:
+      - codeforfun-net
+networks:
+  codeforfun-net:
+    external:
+      name: codeforfun-network
