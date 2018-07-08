@@ -1,3 +1,11 @@
-<p>
-  layout works!
-</p>
+<nz-layout class="layout">
+  <nz-header style="background: transparent;padding: 0;">
+    <app-header></app-header>
+  </nz-header>
+  <nz-content style="padding:0 50px;">
+    <router-outlet></router-outlet>
+  </nz-content>
+  <nz-footer style="text-align: center;bottom: 0;position: fixed;width: 100%;">
+    <app-footer></app-footer>
+  </nz-footer>
+</nz-layout>
