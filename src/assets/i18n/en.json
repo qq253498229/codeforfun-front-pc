@@ -1,29 +1,29 @@
 {
   "home": {
-    "title": "index",
+    "title": "Index",
     "menu": {
       "project": {
-        "title": "project"
+        "title": "Project"
       },
       "user": {
-        "title": "user"
+        "title": "User"
       },
       "team": {
-        "title": "team"
+        "title": "Team"
       },
       "dashboard": {
-        "title": "dashboard"
+        "title": "Dashboard"
       }
     }
   },
   "system": {
     "profile": {
-      "title": "profile"
+      "title": "Profile"
     }
   },
   "user": {
     "list": {
-      "title": "users"
+      "title": "Users"
     }
   }
 }
