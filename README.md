@@ -1,5 +1,12 @@
 # CodeforfunPc
 
+## 使用技术及第三方工具
+
+- [Angular](https://angular.io/) Angular(v6.0.3)
+- [NG-ZORRO](https://ng.ant.design/docs/introduce/zh) NG-ZORRO(v1.1.1)，Ant Design 的 Angular 实现
+- [Ngx-translate](https://github.com/ngx-translate/core) I18n工具(v10.0.2)
+- [Underscore](https://underscorejs.org/) JS工具(v1.9.1)
+
 ## 文件结构
 
 - [app](src/app) 程序源码
