@@ -14,11 +14,7 @@
           "inlineTemplate": false,
           "flat": false,
           "spec": true,
-          "prefix": "pre",
           "styleext": "scss"
-        },
-        "@schematics/angular:directive": {
-          "prefix": "pre"
         }
       },
       "architect": {
