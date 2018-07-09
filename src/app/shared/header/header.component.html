@@ -1,4 +1,4 @@
-<ul nz-menu [nzMode]="'horizontal'">
+<ul nz-menu [nzMode]="'horizontal'" [nzSelectable]="false">
   <li nz-menu-item routerLink="/index" [nzSelected]="router.url === '/index'">
     <img src="assets/images/logo.png" alt="" class="header-logo">
   </li>
@@ -18,7 +18,19 @@
     <i class="anticon anticon-dashboard"></i>
     {{ 'home.menu.dashboard.title' | translate}}
   </li>
-  <li nz-menu-item class="float-right" routerLink="/system/profile" [nzSelected]="router.url === '/system/profile'">
-    Admin
+  <li nz-menu-item class="float-right">
+    <nz-dropdown [nzPlacement]="'bottomRight'">
+      <span nz-dropdown>
+        Admin <i class="anticon anticon-down"></i>
+      </span>
+      <ul nz-menu nzSelectable>
+        <li nz-menu-item>
+          <a>个人信息</a>
+        </li>
+        <li nz-menu-item>
+          <a>注销</a>
+        </li>
+      </ul>
+    </nz-dropdown>
   </li>
 </ul>
