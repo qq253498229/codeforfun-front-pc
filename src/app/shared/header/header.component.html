@@ -1,43 +1,20 @@
 <ul nz-menu [nzMode]="'horizontal'">
   <li nz-menu-item routerLink="/index" [nzSelected]="router.url === '/index'">Logo</li>
+  <li nz-menu-item routerLink="/project" [nzSelected]="router.url.startsWith('/project')">
+    <i class="anticon anticon-appstore"></i>
+    {{ 'home.menu.project.title' | translate }}
+  </li>
   <li nz-menu-item routerLink="/user" [nzSelected]="router.url.startsWith('/user')">
-    <i class="anticon anticon-user"></i> {{ 'home.menu.user.title' | translate }}
+    <i class="anticon anticon-user"></i>
+    {{ 'home.menu.user.title' | translate }}
   </li>
-  <li nz-submenu>
-    <span title><i class="anticon anticon-setting"></i> Navigation Three - Submenu</span>
-    <ul>
-      <li nz-menu-group>
-        <span title>Item 1</span>
-        <ul>
-          <li nz-menu-item>Option 1</li>
-          <li nz-menu-item>Option 2</li>
-        </ul>
-      </li>
-      <li nz-menu-group>
-        <span title>Item 2</span>
-        <ul>
-          <li nz-menu-item>Option 3</li>
-          <li nz-menu-item>Option 4</li>
-          <li nz-submenu>
-            <span title>Sub Menu</span>
-            <ul>
-              <li nz-menu-item nzDisabled>Option 5</li>
-              <li nz-menu-item>Option 6</li>
-            </ul>
-          </li>
-          <li nz-submenu nzDisabled>
-            <span title>Disabled Sub Menu</span>
-            <ul>
-              <li nz-menu-item>Option 5</li>
-              <li nz-menu-item>Option 6</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
+  <li nz-menu-item routerLink="/team" [nzSelected]="router.url.startsWith('/team')">
+    <i class="anticon anticon-team"></i>
+    {{ 'home.menu.team.title' | translate}}
   </li>
-  <li nz-menu-item>
-    <a href="https://ng.ant.design" target="_blank" rel="noopener noreferrer">Navigation Four - Link</a>
+  <li nz-menu-item routerLink="/dashboard" [nzSelected]="router.url.startsWith('/dashboard')">
+    <i class="anticon anticon-dashboard"></i>
+    {{ 'home.menu.dashboard.title' | translate}}
   </li>
   <li nz-menu-item class="float-right" routerLink="/system/profile" [nzSelected]="router.url === '/system/profile'">
     Admin

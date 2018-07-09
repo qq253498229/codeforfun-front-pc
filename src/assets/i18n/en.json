@@ -1,9 +1,18 @@
 {
   "home": {
-    "title": "index title",
+    "title": "index",
     "menu": {
+      "project": {
+        "title": "project"
+      },
       "user": {
-        "title": "users"
+        "title": "user"
+      },
+      "team": {
+        "title": "team"
+      },
+      "dashboard": {
+        "title": "dashboard"
       }
     }
   },

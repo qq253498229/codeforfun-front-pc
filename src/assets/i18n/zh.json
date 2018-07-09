@@ -2,8 +2,17 @@
   "home": {
     "title": "主页标题",
     "menu": {
+      "project": {
+        "title": "浏览项目"
+      },
       "user": {
-        "title": "用户列表"
+        "title": "浏览用户"
+      },
+      "team": {
+        "title": "浏览团队"
+      },
+      "dashboard": {
+        "title": "工作台"
       }
     }
   },
