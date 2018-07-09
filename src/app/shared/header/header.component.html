@@ -18,6 +18,10 @@
     <i class="anticon anticon-dashboard"></i>
     {{ 'home.menu.dashboard.title' | translate}}
   </li>
+  <!--<li nz-menu-item class="float-right">
+    <i class="anticon anticon-login"></i>
+    登录
+  </li>-->
   <li nz-menu-item class="float-right">
     <nz-dropdown [nzPlacement]="'bottomRight'">
       <span nz-dropdown>
@@ -25,10 +29,10 @@
       </span>
       <ul nz-menu nzSelectable>
         <li nz-menu-item>
-          <a>个人信息</a>
+          <a><i class="anticon anticon-user"></i>&nbsp;个人信息</a>
         </li>
         <li nz-menu-item>
-          <a>注销</a>
+          <a><i class="anticon anticon-logout"></i>&nbsp;注销</a>
         </li>
       </ul>
     </nz-dropdown>
