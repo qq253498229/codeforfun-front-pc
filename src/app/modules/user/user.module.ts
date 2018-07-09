@@ -3,6 +3,7 @@ import {ListComponent} from './list/list.component';
 import {RouterModule, Routes} from '@angular/router';
 import {SharedModule} from '../../shared/shared/shared.module';
 import {TranslateModule} from '@ngx-translate/core';
+import {DetailComponent} from './detail/detail.component';
 
 const routes: Routes = [
   {path: '', component: ListComponent}
@@ -15,7 +16,10 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   exports: [RouterModule],
-  declarations: [ListComponent]
+  declarations: [
+    ListComponent,
+    DetailComponent
+  ]
 })
 export class UserModule {
 }
