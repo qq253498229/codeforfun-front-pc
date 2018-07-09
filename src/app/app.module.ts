@@ -32,7 +32,8 @@ const routes: Routes = [
     children: [
       {path: '', redirectTo: '/index', pathMatch: 'full'},
       {path: 'index', component: IndexComponent},
-      {path: 'system', loadChildren: './modules/system/system.module#SystemModule'}
+      {path: 'system', loadChildren: './modules/system/system.module#SystemModule'},
+      {path: 'user', loadChildren: './modules/user/user.module#UserModule'},
     ]
   },
   {path: '**', component: PageNotFoundComponent}
