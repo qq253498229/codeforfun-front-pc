@@ -1,1 +1,15 @@
-{}
+{
+  "home": {
+    "title": "index title",
+    "menu": {
+      "user": {
+        "name": "UserList"
+      }
+    }
+  },
+  "system": {
+    "profile": {
+      "title": "title"
+    }
+  }
+}

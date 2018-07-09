@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
+import {SharedService} from '../shared/shared.service';
 
 @Component({
   selector: 'app-header',
@@ -7,10 +8,13 @@ import {Router} from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  translate;
 
   constructor(
-    public router: Router
+    public router: Router,
+    public service: SharedService
   ) {
+    this.translate = service.getTranslate();
   }
 
   ngOnInit() {

@@ -1,1 +1,7 @@
 Ant Design ©2017 Implement By Angular
+
+<nz-select style="width: 95px;" [ngModel]="translate.currentLang" nzPlaceHolder="请选择语言"
+           (ngModelChange)="changeLang($event)">
+  <nz-option nzValue="zh" nzLabel="中文"></nz-option>
+  <nz-option nzValue="en" nzLabel="English"></nz-option>
+</nz-select>
