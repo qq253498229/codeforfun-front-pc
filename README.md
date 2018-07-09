@@ -23,6 +23,10 @@
     - [page-not-found](src/app/shared/page-not-found) 404组件
     - [shared](src/app/shared/shared) 通用import模块
   - [modules](src/app/modules) 业务模块
+    - [project](src/app/modules/project) 项目模块
+    - [user](src/app/modules/user) 用户模块
+    - [team](src/app/modules/team) 团队模块
+    - [dashboard](src/app/modules/dashboard) 工作台模块
     - [system](src/app/modules/system) 系统设置模块
       - [profile](src/app/modules/system/profile) 个人资料组件
 - [assets](src/assets) 静态文件目录
