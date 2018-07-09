@@ -34,6 +34,9 @@ const routes: Routes = [
       {path: 'index', component: IndexComponent},
       {path: 'system', loadChildren: './modules/system/system.module#SystemModule'},
       {path: 'user', loadChildren: './modules/user/user.module#UserModule'},
+      {path: 'project', loadChildren: './modules/project/project.module#ProjectModule'},
+      {path: 'team', loadChildren: './modules/team/team.module#TeamModule'},
+      {path: 'dashboard', loadChildren: './modules/dashboard/dashboard.module#DashboardModule'},
     ]
   },
   {path: '**', component: PageNotFoundComponent}
