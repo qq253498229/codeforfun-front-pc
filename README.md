@@ -10,6 +10,7 @@
     - [footer](src/app/shared/footer) 底部组件
     - [index](src/app/shared/index) 主页模块
     - [page-not-found](src/app/shared/page-not-found) 404组件
+    - [shared](src/app/shared/shared) 通用import模块
   - [modules](src/app/modules) 业务模块
     - [system](src/app/modules/system) 系统设置模块
       - [profile](src/app/modules/system/profile) 个人资料组件
