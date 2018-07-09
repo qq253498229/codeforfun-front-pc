@@ -1,10 +1,21 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {ListComponent} from './list/list.component';
+import {RouterModule, Routes} from '@angular/router';
+import {SharedModule} from '../../shared/shared/shared.module';
+import {TranslateModule} from '@ngx-translate/core';
+
+const routes: Routes = [
+  {path: '', component: ListComponent}
+];
 
 @NgModule({
   imports: [
-    CommonModule
+    SharedModule,
+    TranslateModule.forChild(),
+    RouterModule.forChild(routes)
   ],
-  declarations: []
+  exports: [RouterModule],
+  declarations: [ListComponent]
 })
-export class UserModule { }
+export class UserModule {
+}

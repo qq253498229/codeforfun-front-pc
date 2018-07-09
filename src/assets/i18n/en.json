@@ -3,13 +3,18 @@
     "title": "index title",
     "menu": {
       "user": {
-        "name": "UserList"
+        "title": "users"
       }
     }
   },
   "system": {
     "profile": {
-      "title": "title"
+      "title": "profile"
+    }
+  },
+  "user": {
+    "list": {
+      "title": "users"
     }
   }
 }

@@ -3,13 +3,18 @@
     "title": "主页标题",
     "menu": {
       "user": {
-        "name": "用户列表"
+        "title": "用户列表"
       }
     }
   },
   "system": {
     "profile": {
       "title": "个人资料标题"
+    }
+  },
+  "user": {
+    "list": {
+      "title": "用户列表"
     }
   }
 }
