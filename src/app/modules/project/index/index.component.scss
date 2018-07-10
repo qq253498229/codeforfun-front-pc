@@ -1,0 +1,45 @@
+.hot-search-a, .order-a {
+  margin: 0 5px;
+  text-decoration: underline;
+}
+
+.content {
+  margin-top: 20px;
+  .title {
+    a {
+      text-decoration: underline;
+    }
+    margin-bottom: 10px;
+    .highlight {
+      color: red;
+    }
+    .button {
+      float: right;
+      color: rgba(0, 0, 0, .65);
+    }
+  }
+  .description {
+    margin-bottom: 10px;
+    display: -webkit-box;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical !important;
+    /* autoprefixer: on */
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+  }
+  .footer {
+    color: #999;
+    .left {
+      float: left;
+      span {
+        margin-right: 5px;
+      }
+    }
+    .right {
+      float: right;
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+}
