@@ -1,15 +1,38 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {HttpClientModule} from '@angular/common/http';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {NgZorroAntdModule} from 'ng-zorro-antd';
+import {RouterModule} from '@angular/router';
+import {TranslateModule} from '@ngx-translate/core';
+
+const THIRD_MODULES = [
+  NgZorroAntdModule,
+];
+const COMPONENTS = [];
+const DIRECTIVES = [];
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    HttpClientModule,
+    RouterModule,
+    ReactiveFormsModule,
+    ...THIRD_MODULES
   ],
-  declarations: []
+  declarations: [
+    ...COMPONENTS,
+    ...DIRECTIVES,
+  ],
+  exports: [
+    CommonModule,
+    FormsModule,
+    RouterModule,
+    ReactiveFormsModule,
+    TranslateModule,
+    ...THIRD_MODULES,
+    ...COMPONENTS,
+    ...DIRECTIVES,
+  ],
 })
 export class SharedModule {
 }
