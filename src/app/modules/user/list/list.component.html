@@ -1,3 +1,71 @@
-<div>
-  {{ 'user.list.title' | translate}}
+<div nz-row>
+  <div nz-col nzSpan="4" class="pr15">
+    <nz-card nzType="inner" nzTitle="语言" class="mb15">
+      <div class="order-a"><a href="javascript:void(0);">JavaScript</a></div>
+      <div class="order-a"><a href="javascript:void(0);">Python</a></div>
+      <div class="order-a"><a href="javascript:void(0);">Java</a></div>
+      <div class="order-a"><a href="javascript:void(0);">Go</a></div>
+      <div class="order-a"><a href="javascript:void(0);">HTML</a></div>
+      <div class="order-a"><a href="javascript:void(0);">C++</a></div>
+      <div class="order-a"><a href="javascript:void(0);">CSS</a></div>
+      <div class="order-a"><a href="javascript:void(0);">C#</a></div>
+      <div class="order-a"><a href="javascript:void(0);">Shell</a></div>
+      <div class="order-a"><a href="javascript:void(0);">PHP</a></div>
+    </nz-card>
+    <nz-card nzType="inner" nzTitle="职位" class="mb15">
+      <div class="order-a"><a href="javascript:void(0);">项目经理</a></div>
+      <div class="order-a"><a href="javascript:void(0);">架构师</a></div>
+      <div class="order-a"><a href="javascript:void(0);">UI</a></div>
+      <div class="order-a"><a href="javascript:void(0);">前端工程师</a></div>
+      <div class="order-a"><a href="javascript:void(0);">后端工程师</a></div>
+      <div class="order-a"><a href="javascript:void(0);">测试</a></div>
+      <div class="order-a"><a href="javascript:void(0);">DBA</a></div>
+      <div class="order-a"><a href="javascript:void(0);">运维工程师</a></div>
+    </nz-card>
+    <nz-card nzType="inner" nzTitle="工作时间">
+      <div class="order-a"><a href="javascript:void(0);">00:00-06:00</a></div>
+      <div class="order-a"><a href="javascript:void(0);">06:00-12:00</a></div>
+      <div class="order-a"><a href="javascript:void(0);">12:00-18:00</a></div>
+      <div class="order-a"><a href="javascript:void(0);">18:00-24:00</a></div>
+    </nz-card>
+  </div>
+  <div nz-col nzSpan="20" class="pl15">
+    <nz-card>
+      <div nz-row class="mb25">
+        <div nz-col [nzSpan]="6" class="pt5">
+          排序：
+          <a href="javascript:void(0);" class="hot-search-a">等级</a>
+          <a href="javascript:void(0);" class="hot-search-a">活跃</a>
+          <a href="javascript:void(0);" class="hot-search-a">项目数</a>
+        </div>
+        <div nz-col [nzSpan]="18">
+          <nz-input-group nzSuffixIcon="anticon anticon-search">
+            <input type="text" nz-input placeholder="请输入关键字">
+          </nz-input-group>
+        </div>
+      </div>
+
+      <div nz-row class="mb15">
+        <div nz-col [nzSpan]="8" class="mb25" *ngFor="let item of test">
+          <div nz-row class="mb7">
+            <div nz-col [nzSpan]="6">
+              <img src="assets/images/icon/u332.png" alt="">
+            </div>
+            <div nz-col [nzSpan]="18">
+                <div class="title">
+                  大胃王 <span>9级</span>
+                </div>
+                <div>已完成137个项目</div>
+                <div>目前正在3个项目</div>
+            </div>
+          </div>
+          <div nz-row>
+            <span class="tag">主要语言：Java, JavaScript</span>
+
+          </div>
+
+        </div>
+      </div>
+    </nz-card>
+  </div>
 </div>
