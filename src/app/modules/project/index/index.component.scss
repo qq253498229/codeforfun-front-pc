@@ -1,6 +1,9 @@
 .hot-search-a, .order-a {
   margin: 0 5px;
   text-decoration: underline;
+  a {
+    color: rgba(0, 0, 0, .65);
+  }
 }
 
 .content {
@@ -23,7 +26,6 @@
     display: -webkit-box;
     /* autoprefixer: off */
     -webkit-box-orient: vertical !important;
-    /* autoprefixer: on */
     -webkit-line-clamp: 4;
     overflow: hidden;
   }
