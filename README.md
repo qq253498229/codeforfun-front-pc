@@ -10,6 +10,7 @@
 - [NG-ZORRO](https://ng.ant.design/docs/introduce/zh) NG-ZORRO(v1.1.1)，Ant Design 的 Angular 实现
 - [Ngx-translate](https://github.com/ngx-translate/core) I18n工具(v10.0.2)
 - [Underscore](https://underscorejs.org/) JS工具(v1.9.1)
+- [Angular2 HotKeys](https://github.com/brtnshrdr/angular2-hotkeys) Angular2热键工具
 
 ## 文件结构
 

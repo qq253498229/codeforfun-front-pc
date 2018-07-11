@@ -18,6 +18,7 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import {HotkeyModule} from 'angular2-hotkeys';
 
 registerLocaleData(zh);
 
@@ -65,7 +66,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
     /** 导入 ng-zorro-antd 模块 **/
-    NgZorroAntdModule
+    NgZorroAntdModule,
+    HotkeyModule.forRoot({cheatSheetDescription: '打开快捷键列表'}),
   ],
   providers: [
     {provide: NZ_I18N, useValue: zh_CN}

@@ -4,9 +4,11 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
 import {RouterModule} from '@angular/router';
 import {TranslateModule} from '@ngx-translate/core';
+import {HotkeyModule} from 'angular2-hotkeys';
 
 const THIRD_MODULES = [
   NgZorroAntdModule,
+  HotkeyModule,
 ];
 const COMPONENTS = [];
 const DIRECTIVES = [];
