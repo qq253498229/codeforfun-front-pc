@@ -1,3 +1,73 @@
-<p>
-  dashboard index works!
-</p>
+<div nz-row>
+  <div nz-col [nzSpan]="4" class="pr15">
+    <nz-card nzType="inner" nzTitle="通知" class="mb15">
+      <div class="order-a"><a href="javascript:void(0);">系统通知</a></div>
+      <div class="order-a"><a href="javascript:void(0);">工作通知</a></div>
+    </nz-card>
+    <nz-card nzType="inner" nzTitle="我的" class="mb15">
+      <div class="order-a"><a href="javascript:void(0);">我的项目</a></div>
+      <div class="order-a"><a href="javascript:void(0);">我的团队</a></div>
+    </nz-card>
+    <nz-card nzType="inner" nzTitle="收藏">
+      <div class="order-a"><a href="javascript:void(0);">团队</a></div>
+      <div class="order-a"><a href="javascript:void(0);">用户</a></div>
+      <div class="order-a"><a href="javascript:void(0);">项目</a></div>
+    </nz-card>
+  </div>
+  <div nz-col [nzSpan]="20" class="pl15">
+    <nz-card>
+      <h1 class="text-center">全部消息</h1>
+      <nz-tabset>
+        <nz-tab nzTitle="已读消息">
+          <p>
+            <a href="javascript:void(0);">恭喜，您已经成功创建项目 codeforfun-practice</a>
+            <a href="javascript:void(0);">标记已读</a>
+          </p>
+          <p>
+            <a href="javascript:void(0);">用户 大胃王 加入了项目 codeforfun-practice</a>
+            <a href="javascript:void(0);">标记已读</a>
+          </p>
+          <p>
+            <a href="javascript:void(0);">恭喜，您已经成功创建团队 codeforfun-group</a>
+            <a href="javascript:void(0);">标记已读</a>
+          </p>
+          <p>
+            <a href="javascript:void(0);">用户 大胃王 加入了团队 codeforfun-group</a>
+            <a href="javascript:void(0);">标记已读</a>
+          </p>
+        </nz-tab>
+        <nz-tab nzTitle="未读消息">
+          <p>
+            <a href="javascript:void(0);">恭喜您已经成功加入项目 codeforfun-practice</a>
+            <a href="javascript:void(0);"><i class="anticon anticon-delete"></i></a>
+          </p>
+          <p>
+            <a href="javascript:void(0);">用户 大胃王 邀请您加入项目 codeforfun-practice</a>
+            <a href="javascript:void(0);"><i class="anticon anticon-delete"></i></a>
+          </p>
+          <p>
+            <a href="javascript:void(0);">为了保证您的账号安全，请尽快补充个人资料。</a>
+            <a href="javascript:void(0);"><i class="anticon anticon-delete"></i></a>
+          </p>
+          <p>
+            <a href="javascript:void(0);">创建账号成功！欢迎加入codeforfun-practice。</a>
+            <a href="javascript:void(0);"><i class="anticon anticon-delete"></i></a>
+          </p>
+        </nz-tab>
+      </nz-tabset>
+    </nz-card>
+  </div>
+</div>
+
+
+<!--<nz-tabset>
+  <nz-tab nzTitle="Tab 1">
+    Content of Tab Pane 1
+  </nz-tab>
+  <nz-tab nzTitle="Tab 2">
+    Content of Tab Pane 2
+  </nz-tab>
+  <nz-tab nzTitle="Tab 3">
+    Content of Tab Pane 3
+  </nz-tab>
+</nz-tabset>-->
