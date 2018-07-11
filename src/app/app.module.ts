@@ -67,7 +67,7 @@ const routes: Routes = [
     BrowserAnimationsModule,
     /** 导入 ng-zorro-antd 模块 **/
     NgZorroAntdModule,
-    HotkeyModule.forRoot({cheatSheetDescription: '打开快捷键列表'}),
+    HotkeyModule.forRoot({cheatSheetDescription: '打开快捷键列表(注意英文)'}),
   ],
   providers: [
     {provide: NZ_I18N, useValue: zh_CN}
