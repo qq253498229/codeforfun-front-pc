@@ -29,11 +29,11 @@
     <nz-card>
       <div nz-row class="mb15">
         热门搜索：
-        <a href="javascript:void(0);" class="hot-search-a">公众号</a>
-        <a href="javascript:void(0);" class="hot-search-a">小程序</a>
-        <a href="javascript:void(0);" class="hot-search-a">spring</a>
-        <a href="javascript:void(0);" class="hot-search-a">区块链</a>
-        <a href="javascript:void(0);" class="hot-search-a">vue</a>
+        <nz-tag>公众号</nz-tag>
+        <nz-tag>小程序</nz-tag>
+        <nz-tag>spring</nz-tag>
+        <nz-tag>区块链</nz-tag>
+        <nz-tag>vue</nz-tag>
       </div>
       <div nz-row class="mb15">
         <nz-input-group nzSuffixIcon="anticon anticon-search">
@@ -44,17 +44,17 @@
         <div class="float-left">搜索到23个结果：</div>
         <div class="float-right">
           排序：
-          <a href="javascript:void(0);" class="order-a">相关度</a>
-          <a href="javascript:void(0);" class="order-a">点击量</a>
-          <a href="javascript:void(0);" class="order-a">收藏数</a>
-          <a href="javascript:void(0);" class="order-a">时间</a>
+          <nz-tag>相关度</nz-tag>
+          <nz-tag>点击量</nz-tag>
+          <nz-tag>收藏数</nz-tag>
+          <nz-tag>时间</nz-tag>
         </div>
       </div>
       <div nz-row class="mb15">
         <div class="content" *ngFor="let item of test">
           <div class="title">
             <a href="javascript:void(0);">Codeforfun-practice 项目合作平台 (<span class="highlight">Java</span>)</a>
-            <a class="button" href="javascript:void(0);">申请加入</a>
+            <button nz-button nzType="primary" [nzSize]="'small'">申请加入</button>
           </div>
           <div class="description">
             本站源码，你懂的，嘿嘿Java嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈，嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈，嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈，嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈，嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿嘿哈哈嘿哈嘿
@@ -67,7 +67,9 @@
           <div class="footer clearfix">
             <div class="left">
               <span class="time">2018-03-11</span>
-              <span class="type">类别：Web应用</span>
+              <span class="type">类别：
+                <nz-tag>Web应用</nz-tag>
+              </span>
               <span class="tag">标签：
                 <nz-tag>Java</nz-tag>
                 <nz-tag>SpringBoot</nz-tag>

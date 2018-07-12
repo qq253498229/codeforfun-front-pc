@@ -18,11 +18,11 @@
     <nz-card>
       <div nz-row class="mb15">
         热门搜索：
-        <a href="javascript:void(0);" class="hot-search-a">微信</a>
-        <a href="javascript:void(0);" class="hot-search-a">Web</a>
-        <a href="javascript:void(0);" class="hot-search-a">iOS</a>
-        <a href="javascript:void(0);" class="hot-search-a">Android</a>
-        <a href="javascript:void(0);" class="hot-search-a">小程序</a>
+        <nz-tag>微信</nz-tag>
+        <nz-tag>Web</nz-tag>
+        <nz-tag>iOS</nz-tag>
+        <nz-tag>Android</nz-tag>
+        <nz-tag>小程序</nz-tag>
       </div>
       <div nz-row class="mb15">
         <nz-input-group nzSuffixIcon="anticon anticon-search">
@@ -33,16 +33,16 @@
         <div class="float-left">搜索到23个结果：</div>
         <div class="float-right">
           排序：
-          <a href="javascript:void(0);" class="order-a">相关度</a>
-          <a href="javascript:void(0);" class="order-a">人数</a>
-          <a href="javascript:void(0);" class="order-a">完成项目数</a>
+          <nz-tag>相关度</nz-tag>
+          <nz-tag>人数</nz-tag>
+          <nz-tag>完成项目数</nz-tag>
         </div>
       </div>
       <div nz-row class="mb15">
         <div class="content" *ngFor="let item of test">
           <div class="title">
             <a href="javascript:void(0);">codeforfun-group</a>
-            <a class="button" href="javascript:void(0);">申请加入</a>
+            <button nz-button nzType="primary" [nzSize]="'small'">申请加入</button>
           </div>
           <div class="description">
             团队主要业务为web、微信公众号、企业号以及小程序的设计开发。
