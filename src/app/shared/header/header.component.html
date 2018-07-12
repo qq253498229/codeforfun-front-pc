@@ -16,7 +16,9 @@
   </li>
   <li nz-menu-item routerLink="/dashboard" [nzSelected]="router.url.startsWith('/dashboard')">
     <i class="anticon anticon-dashboard"></i>
-    {{ 'home.menu.dashboard.title' | translate}}
+    <nz-badge nzDot>
+      {{ 'home.menu.dashboard.title' | translate}}
+    </nz-badge>
   </li>
   <!--<li nz-menu-item class="float-right">
     <i class="anticon anticon-login"></i>
