@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
+import {SharedService} from '../shared/shared.service';
 
 @Component({
   selector: 'app-layout',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+  /**
+   * 页面加载标志
+   */
+  loadFlag = true;
+
+  constructor(
+    private service: SharedService,
+    private cd: ChangeDetectorRef) {
+
+  }
 
   ngOnInit() {
+    this.service.loadObservable.subscribe(res => {
+      this.loadFlag = <boolean>res;
+      this.cd.detectChanges();
+    });
   }
 
 }

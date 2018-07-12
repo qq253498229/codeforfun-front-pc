@@ -1,11 +1,29 @@
 import {Injectable} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
+import {Subject} from 'rxjs';
 
+/**
+ * 全局service
+ */
 @Injectable({
   providedIn: 'root'
 })
 export class SharedService {
   LANG_KEY = 'lang';
+
+  private loadFlag = new Subject();
+  loadObservable = this.loadFlag.asObservable();
+
+  /**
+   * 加载完成
+   */
+  loadDone() {
+    this.loadFlag.next(false);
+  }
+
+  loading() {
+    this.loadFlag.next(true);
+  }
 
   constructor(
     public translate: TranslateService
@@ -23,10 +41,18 @@ export class SharedService {
     }
   }
 
+  /**
+   * 获取当前语言
+   * @returns {TranslateService}
+   */
   getTranslate() {
     return this.translate;
   }
 
+  /**
+   * 修改当前语言
+   * @param obj
+   */
   changeLang(obj) {
     this.translate.use(obj);
     localStorage.setItem(this.LANG_KEY, obj);

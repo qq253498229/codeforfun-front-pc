@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {SharedService} from '../../../shared/shared/shared.service';
 
 @Component({
   selector: 'app-dashboard-index',
@@ -7,10 +8,13 @@ import {Component, OnInit} from '@angular/core';
 })
 export class IndexComponent implements OnInit {
 
-  constructor() {
+  constructor(
+    private service: SharedService
+  ) {
   }
 
   ngOnInit() {
+    this.service.loadDone();
   }
 
 }

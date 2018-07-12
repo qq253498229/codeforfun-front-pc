@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {SharedService} from '../../../shared/shared/shared.service';
 
 @Component({
   selector: 'app-user-list',
@@ -8,10 +9,13 @@ import {Component, OnInit} from '@angular/core';
 export class ListComponent implements OnInit {
   test = [];
 
-  constructor() {
+  constructor(
+    private service: SharedService
+  ) {
   }
 
   ngOnInit() {
+    this.service.loadDone();
     for (let i = 0; i < 15; i++) {
       this.test.push(i);
     }

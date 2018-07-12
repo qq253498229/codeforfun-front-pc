@@ -19,6 +19,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {HotkeyModule} from 'angular2-hotkeys';
+import {LoadingGuard} from './shared/guard/loading.guard';
 
 registerLocaleData(zh);
 
@@ -29,7 +30,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 const routes: Routes = [
   {
-    path: '', component: LayoutComponent,
+    path: '', component: LayoutComponent, canActivateChild: [LoadingGuard],
     children: [
       {path: '', redirectTo: '/index', pathMatch: 'full'},
       {path: 'index', component: IndexComponent},

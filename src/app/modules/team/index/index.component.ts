@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {SharedService} from '../../../shared/shared/shared.service';
 
 @Component({
   selector: 'app-team-index',
@@ -8,10 +9,13 @@ import {Component, OnInit} from '@angular/core';
 export class IndexComponent implements OnInit {
   test = [1, 2, 3, 4];
 
-  constructor() {
+  constructor(
+    private service: SharedService
+  ) {
   }
 
   ngOnInit() {
+    this.service.loadDone();
   }
 
 }
