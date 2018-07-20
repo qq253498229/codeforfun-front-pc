@@ -14,10 +14,10 @@ export class AppComponent implements OnInit {
     private router: Router
   ) {
 
-    this.hotKey.add(new Hotkey('alt+`', (event: KeyboardEvent): boolean => {
+    this.hotKey.add(new Hotkey('alt+h', (event: KeyboardEvent): boolean => {
       this.router.navigate(['/index']);
       return false;
-    }, undefined, '回到主页。(macOS中对应option+`)'));
+    }, undefined, '回到主页。(macOS中对应option+h)'));
 
     this.hotKey.add(new Hotkey('alt+1', (event: KeyboardEvent): boolean => {
       this.router.navigate(['/project']);
@@ -34,10 +34,15 @@ export class AppComponent implements OnInit {
       return false;
     }, undefined, '跳转到团队列表。(macOS中对应option+3)'));
 
-    this.hotKey.add(new Hotkey('alt+4', (event: KeyboardEvent): boolean => {
+    this.hotKey.add(new Hotkey('alt+`', (event: KeyboardEvent): boolean => {
       this.router.navigate(['/dashboard']);
       return false;
     }, undefined, '跳转到工作台。(macOS中对应option+4)'));
+
+    this.hotKey.add(new Hotkey('alt+p', (event: KeyboardEvent): boolean => {
+      this.router.navigate(['/system/profile']);
+      return false;
+    }, undefined, '跳转到个人信息。(macOS中对应option+p)'));
   }
 
   ngOnInit(): void {
