@@ -1,52 +1,33 @@
 <div class="card-outer">
-  <div nz-row [nzGutter]="24">
-    <div nz-col [nzSpan]="12">
-      <nz-card nzTitle="我要找人" [nzExtra]="userTemplate">
-        <p>codeforfun-practice招人啦，来了就是兄弟</p>
-        <p>codeforfun-practice招人啦，来了就是兄弟</p>
-        <p>codeforfun-practice招人啦，来了就是兄弟</p>
-        <p>codeforfun-practice招人啦，来了就是兄弟</p>
-        <p>codeforfun-practice招人啦，来了就是兄弟</p>
-      </nz-card>
-      <ng-template #userTemplate>
-        <a routerLink="/user">更多</a>
-      </ng-template>
-    </div>
-    <div nz-col [nzSpan]="12">
-      <nz-card nzTitle="我要找活" [nzExtra]="projectTemplate">
-        <p>Card content</p>
+  <div nz-row [nzGutter]="16">
+    <div nz-col [nzSpan]="8">
+      <nz-card nzTitle="热门项目" [nzExtra]="projectTemplate">
+        <p>Codeforfun</p>
+        <p>Codeforfun</p>
+        <p>Codeforfun</p>
+        <p>Codeforfun</p>
+        <p>Codeforfun</p>
+        <p>Codeforfun</p>
       </nz-card>
       <ng-template #projectTemplate>
         <a routerLink="/project">更多</a>
       </ng-template>
     </div>
-  </div>
-</div>
-
-<div class="card-outer">
-  <div nz-row [nzGutter]="16">
     <div nz-col [nzSpan]="8">
-      <nz-card nzTitle="热门项目">
-        <p>Codeforfun</p>
-        <p>Codeforfun</p>
-        <p>Codeforfun</p>
-        <p>Codeforfun</p>
-        <p>Codeforfun</p>
-        <p>Codeforfun</p>
+      <nz-card nzTitle="明星用户" [nzExtra]="userTemplate">
+        <p>大胃王</p>
+        <p>大胃王</p>
+        <p>大胃王</p>
+        <p>大胃王</p>
+        <p>大胃王</p>
+        <p>大胃王</p>
       </nz-card>
+      <ng-template #userTemplate>
+        <a routerLink="/user">更多</a>
+      </ng-template>
     </div>
     <div nz-col [nzSpan]="8">
-      <nz-card nzTitle="明星用户">
-        <p>大胃王</p>
-        <p>大胃王</p>
-        <p>大胃王</p>
-        <p>大胃王</p>
-        <p>大胃王</p>
-        <p>大胃王</p>
-      </nz-card>
-    </div>
-    <div nz-col [nzSpan]="8">
-      <nz-card nzTitle="优秀团队">
+      <nz-card nzTitle="优秀团队" [nzExtra]="teamTemplate">
         <p>Codeforfun</p>
         <p>Codeforfun</p>
         <p>Codeforfun</p>
@@ -54,6 +35,9 @@
         <p>Codeforfun</p>
         <p>Codeforfun</p>
       </nz-card>
+      <ng-template #teamTemplate>
+        <a routerLink="/team">更多</a>
+      </ng-template>
     </div>
   </div>
 </div>
