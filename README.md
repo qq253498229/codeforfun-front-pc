@@ -2,7 +2,7 @@
 
 ## 测试页面
 
-[点击](http://test.codeforfun.cn/index)
+[点击](https://test.codeforfun.cn/index)
 
 ## 使用技术及第三方工具
 
