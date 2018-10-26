@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: registry.cn-qingdao.aliyuncs.com/wangdali/codeforfun-front-pc
   tag: latest
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 nameOverride: ""
 fullnameOverride: ""
@@ -23,7 +23,7 @@ ingress:
     # kubernetes.io/tls-acme: "true"
   path: /
   hosts:
-    - chart-example.local
+    - test.codeforfun.cn
   tls:
     - secretName: test.codeforfun.cn-secret
       hosts:
@@ -34,12 +34,12 @@ resources: {}
   # choice for the user. This also increases chances charts run on environments with little
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
-  # limits:
-  #  cpu: 100m
-  #  memory: 128Mi
-  # requests:
-  #  cpu: 100m
-  #  memory: 128Mi
+  limits:
+   cpu: 100m
+   memory: 128Mi
+  requests:
+   cpu: 100m
+   memory: 128Mi
 
 nodeSelector: {}
 
